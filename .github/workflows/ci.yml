@@ -12,8 +12,11 @@ jobs:
     steps:
       - name: "set up node js"
         uses: actions/setup-node@v4
-        with:
-          node-version: '21'
+        #with:
+         # node-version: '21'
 
       - name: "version check"
         run: node --version
+      
+      - name: "clone the repo"
+        uses: actions/checkout@v2
