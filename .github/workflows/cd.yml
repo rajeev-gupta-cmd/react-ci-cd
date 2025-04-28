@@ -22,7 +22,7 @@ jobs:
       - name: "download build file"
         uses: actions/download-artifact@v4
         with:
-          name: "build" 
+          name: "build"   
           run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ github.token }}
 
